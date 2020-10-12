@@ -15,7 +15,7 @@ def DecoratedEvenNums(EvenNums):
 def EvenNums(lst):
     length = 0;
     for x in lst:
-        if x%2 == 0:
+        if x % 2 == 0:
             length += 1
     return length
 
