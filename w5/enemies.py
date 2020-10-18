@@ -42,5 +42,4 @@ class GreenDragon(Dragon):
 #FIXME здесь также должны быть описаны классы RedDragon и BlackDragon
 # красный дракон учит вычитанию, а чёрный -- умножению.
 
-
 enemy_types = [GreenDragon, RedDragon, BlackDragon]
