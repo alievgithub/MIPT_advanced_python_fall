@@ -34,4 +34,4 @@ class Daughter(Mother):
 
 if __name__ == '__main__':
     print(Mother('Jessica'))
-    print(Daughter('Sofia', 'Amanda'))
+    print(Daughter('Sofia', 'Jessica'))
