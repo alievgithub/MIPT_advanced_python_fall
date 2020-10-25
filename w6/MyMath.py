@@ -37,8 +37,13 @@ class MyComplexMath(MyMath): # Наследование
 а в staticmethod вносить изменения будет невозможно
 """
 
-#print(MyComplexMath.sqrt(-2))
-#print(MyMath.sqrt(-9))
+print('Enter argument of sqrt(x): ', end = '')
+x = float(input())
+
+print('When _complex = True:', MyComplexMath.sqrt(x))
+print('When _complex = False: ', end = '')
+print(MyMath.sqrt(x))
+
 '''
 print('Enter argument of sin(x): ', end = '')
 x = float(input())
