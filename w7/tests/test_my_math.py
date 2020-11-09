@@ -1,4 +1,4 @@
-from my_mathematics.simple_math import MyMath
+from my_mathematics.math import MyMath
 import math
 import pytest
 
