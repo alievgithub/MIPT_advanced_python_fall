@@ -20,7 +20,7 @@ class Complex(object):
             return Complex((self.__real * num.__real + self.__imag * num.__imag) / denominator, (self.__imag * num.__real + self.__real * num.__imag) / denominator)
 
     def __mul__(self, num):
-        return Complex(self.__real * num.__real - self.__imag * num.__imag, self.__real * num.__imag - self.__imag * num.__real)
+        return Complex(self.__real * num.__real - self.__imag * num.__imag, self.__real * num.__imag + self.__imag * num.__real)
 
     def __neg__(self):
         return Complex(- self.__real, - self.__imag)
@@ -28,12 +28,21 @@ class Complex(object):
     def __abs__(self):
         return (self.__real ** 2 + self.__imag ** 2) ** (1/2)
 
+    def abs(self):
+        return (self.__real ** 2 + self.__imag ** 2) ** (1/2)
+
     def __eq__(self, num):
         return self.__real == num.__real and self.__imag == num.__imag
 
+    def get_real(self):
+        return self.__real
+
+    def get_imag(self):
+        return self.__imag
+
 if __name__ == '__main__':
-    x = Complex(2, 4)
-    y = Complex(3, 5)
+    x = Complex(-1, 1)
+    y = Complex(500, 110)
 
     print('Two complex numbers:', x, y)
     print('Sum:', x + y)

@@ -22,7 +22,8 @@ class Vector:
 
     def __sub__(self, other):
         subbed = list(a - b for a, b in zip(self, other))
-
+        return Vector(*subbed)
+        
     def length_of_vector(self):
         return math.sqrt(sum(value**2 for value in self.__values))
 
