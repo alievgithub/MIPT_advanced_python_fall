@@ -20,7 +20,7 @@ class Complex(object):
             return Complex((self.__real * num.__real + self.__imag * num.__imag) / denominator, (self.__imag * num.__real + self.__real * num.__imag) / denominator)
 
     def __mul__(self, num):
-        return Complex(self.__real * num.__real - self.__imag * num.__imag, self.__real * num.__imag - self.__imag * num.__real)
+        return Complex(self.__real * num.__real - self.__imag * num.__imag, self.__real * num.__imag + self.__imag * num.__real)
 
     def __neg__(self):
         return Complex(- self.__real, - self.__imag)
