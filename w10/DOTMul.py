@@ -13,4 +13,4 @@ if __name__ == "__main__":
     for thread in threads:
         thread.join()
 
-    print(dot(a, b))
+    #print(dot(a, b))
