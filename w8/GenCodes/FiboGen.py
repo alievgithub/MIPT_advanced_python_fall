@@ -1,5 +1,5 @@
-def FiboGen(n):
-    def Fibo():
+def Fibo(n):
+    def FiboGen():
         first = 0
         second = 1
         while True:
