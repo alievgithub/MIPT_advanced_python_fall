@@ -1,8 +1,18 @@
 class BinTree:
+    def __iter__(self):
+        return self
+
+    def tree_iteration(self):
+        self.iter_tree = iter(self.DFS(self))
+
+    def __next__(self):
+            return next(self.iter_tree)
+
     def __init__(self, value):
         self.left = None
         self.right = None
         self.value = value
+        self.tree_iteration()
 
     def add(self, value):
         if self.value:
@@ -18,6 +28,7 @@ class BinTree:
                     self.right.add(value)
         else:
             self.value = value
+        self.tree_iteration()
 
     def DFS(self, root):
         res = []
