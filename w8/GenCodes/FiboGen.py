@@ -6,9 +6,9 @@ def Fibo(n):
             yield first
             first, second = second, first + second
 
-    f = Fibo()
+    f = FiboGen()
     for i in range(n):
         next(f)
     return next(f)
 
-#print(FiboGen(6))
+#print(Fibo(6))
