@@ -2,3 +2,6 @@ numpy==1.16.6
 setuptools
 wheel
 pytest
+aiohttp
+fastapi
+asyncio
